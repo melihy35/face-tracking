@@ -18,13 +18,13 @@ using namespace cv;
 void main() {
 
     Mat kamera;    
-    VideoCapture cap(1);
+    VideoCapture cap(1);//choose which webcam to use
 
     while (true)
     {
         cap.read(kamera); //read cam
 		flip(kamera, kamera, 1);//mirror cam
-		imshow("kopya first layer", kamera);
+		imshow("Webcam", kamera);
 		waitKey(1);
     }
     
